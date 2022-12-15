@@ -1,0 +1,79 @@
+{% load static %}
+
+{{ '<' }}{{ '!DOCTYPE html>' }}
+<html lang="pt-br">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pestana's Portifolio:</title>
+  <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css' rel="stylesheet" type="text/css">
+  </head>
+
+<body>
+  
+  <section id="section1">
+    <br>
+    <div id="div1">
+       <ul id="lista">
+        <li>Sobre</li>
+        <li>Experiência</li>
+        <li>Formação</li>
+        <li>Contato</li>
+      </ul>
+    </div>
+  </section>
+  
+<section id="sectiontexto">
+  <label id="label1"> <h1>Olá! Eu me chamo Vitor Pestana</h1></label>
+  <label id="label2"> <br><h2>e quero ser seu estagiário!</h2></label>
+</section>
+  
+  <section id="section2">
+    <div id="div2">
+      <div id="slider">
+       <img class="selected" src="{% static 'imagem1.jpg' %}">
+       <img  src="{% static 'imagem3.jpg' %}">
+      </div>
+    </div>
+  </section>
+
+  <section id="section3">
+    <div class="box">
+      
+      <a href= 'https://www.instagram.com/vitorluizpestana/?igshid=YmMyMTA2M2Y%3D' target="_blank" class= "btn instagram">
+        <div class="icon">
+          <i class='fab fa-instagram'></i>
+        </div>
+      <span> Instagram</span>
+      </a>
+
+       <a href= 'https://github.com/vitorpestana94?tab=repositories' target="_blank" class= "btn github">
+        <div class="icon">
+          <i class="fab fa-github"> </i>
+        </div>
+      <span> GitHub </span>
+      </a>
+
+        <a href='https://wa.me/5521991505625'  target="_blank" class= "btn whatsapp">
+        <div class="icon">
+          <i class="fab fa-whatsapp"> </i>
+        </div>
+      <span> WhatsApp</span>
+      </a>
+
+      <a href='https://www.facebook.com/profile.php?id=100006263116562'  target="_blank" class= "btn facebook">
+        <div class="icon">
+          <i class="fab fa-facebook"> </i>
+        </div>
+      <span> Facebook</span>
+      </a>
+    </div>
+ 
+
+  <script src="{% static 'script.js' %}"></script>
+  </section>
+</body>
+
+</html>
