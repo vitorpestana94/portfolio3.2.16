@@ -1,37 +1,10 @@
-{% extends 'base.html' %}
-{% block content %}
-<form action="." method="post">
-    {% csrf_token %}
-    <p>
-        <label for="{{ form.nome.id_for_label }}">{{ form.nome.label }}</label>
-        {{ form.nome.errors }}
-        {{ form.nome}}
-    </p>
-    <p>
-        <label for="{{ form.CPF.id_for_label }}">{{ form.CPF.label }}</label>
-        {{ form.CPF.errors }}
-        {{ form.CPF}}
-    </p>
-    <p>
-        <label for="{{ form.email.id_for_label }}">{{ form.email.label }}</label>
-        {{ form.email.errors }}
-        {{ form.email}}
-    </p>
-    <p>
-        <label for="{{ form.telefone.id_for_label }}">{{ form.telefone.label }}</label>
-        {{ form.telefone.errors }}
-        {{ form.telefone}}
-    </p>
-    <input type="submit" value = "Enviar!"/>
-</form>
-{% endblock content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>{% block title %}Formulário{% endblock title %}</title>
     <style>
         .alert {
             padding: 0 15px;
@@ -60,5 +33,7 @@
     </div>
     {% endfor %}
     {% endif %}
+    {% block content %} 
+    {% endblock content %}
 </body>
 </html>
