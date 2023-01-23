@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'test_without_migrations',
     'django_extensions',
     'eventex.core',
-    'eventex.subscriptions',
+    'eventex.subscriptions.apps.SubscriptionsConfig',
 ]
 
 MIDDLEWARE = [
@@ -133,4 +133,5 @@ EMAIL_USE_TLS = config('EMAIL_USE_TLS')
 EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 
-DEFAULT_FROM_EMAIL = "vitorpestanatr@gmail.com" 
+DEFAULT_FROM_EMAIL = "contato@eventex.com.br" 
+#'contato@eventex.com.br'
