@@ -1,0 +1,16 @@
+
+{% block content %}
+<section>
+    <div>
+        <h1> Obrigado pelo contato!</h1>
+        <p> Estes são os dados que você forneceu neste contato</p>
+        <ul>
+            <li>Nome: {{ subscription.nome }}</li>
+            <li>CPF: {{ subscription.CPF }}</li>
+            <li>Email: {{ subscription.email }}</li>
+            <li>Telefone: {{ subscription.telefone }}</li>
+        </ul>
+        <p>Em breve retornarei o contato!</p>
+    </div>
+</section>
+{% endblock content %}

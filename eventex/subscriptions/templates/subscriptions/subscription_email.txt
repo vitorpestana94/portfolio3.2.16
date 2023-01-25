@@ -1,8 +1,4 @@
-
-MESSAGE = """
-Pode digitar qualquer coisa aqui, desde que tudo o que está abaixo seja assim:
-nome: {{ nome }}
-CPF: {{ CPF }}
-email: {{ email }}
-telefone: {{ telefone }}
-"""
+nome: {{ subscription.nome }}
+CPF: {{ subscription.CPF }}
+email: {{ subscription.email }}
+telefone: {{ subscription.telefone }}
