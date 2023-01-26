@@ -2,11 +2,12 @@ from django.test import TestCase
 from eventex.subscriptions.forms import SubscriptionForm
 from django.core import mail
 from eventex.subscriptions.models import Subscription
+from django.shortcuts import resolve_url as r
 
-class Subscribe_Get(TestCase):
+class SubscriptionNewGet(TestCase):
     
     def setUp(self):
-        self.resp = self.client.get('/inscricao/')
+        self.resp = self.client.get(r('subscriptions:new'))
     
     def test_get(self):
         self.assertEqual(200, self.resp.status_code)
@@ -24,7 +25,7 @@ class Subscribe_Get(TestCase):
         for text, count in tags:
             with self.subTest():
                 self.assertContains(self.resp, text, count)
-    
+    href="/inscricao/"
     def test_csrf(self):
         self.assertContains(self.resp, 'csrfmiddlewaretoken')
     
@@ -32,14 +33,14 @@ class Subscribe_Get(TestCase):
         form = self.resp.context['form']
         self.assertIsInstance(form, SubscriptionForm)
     
-class Subscribe_Post_Valid(TestCase):
+class SubscriptionNewPostValid(TestCase):
     def setUp(self):
         data = dict(nome = "Henrique Bastos", CPF = "12345678901", 
             email = "henrique@bastos.net", telefone = "21-99150-5625")
         self.resp = self.client.post("/inscricao/", data)
     
     def test_post(self):
-        self.assertRedirects(self.resp, '/inscricao/1/')
+        self.assertRedirects(self.resp, r('subscriptions:detail', 1))
     
     def test_send_subscribe_email(self):
         self.assertEqual(1, len(mail.outbox))
@@ -47,7 +48,7 @@ class Subscribe_Post_Valid(TestCase):
     def test_save_subscription(self):
         self.assertTrue(Subscription.objects.exists())
 
-class Subscribe_Post_Invalid(TestCase):
+class SubscriptionNewPostInvalid(TestCase):
     def setUp(self):
         self.resp = self.client.post('/inscricao/', {})
     

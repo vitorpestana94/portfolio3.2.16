@@ -6,32 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Formulário{% endblock title %}</title>
-    <style>
-        .alert {
-            padding: 0 15px;
-            margin-bottom: 1rem;
-            border: 1px solid transparent;
-            border-radius: .25rem;
-        }
-        .alert p {
-            padding: 7px 0 7px; 
-        }
-        .alert.success {
-            color: #3c763d;
-            background-color: #dff0d8;
-            border-color: #d0e9c6;
-        }
-    </style>
 </head>
 <body>
     <h1>Formulário de inscrição</h1>
     {% if messages %}
     {% for message in messages %}
-    <div class="alert success">
-        <p>
-            {{message}}
-        </p>
-    </div>
     {% endfor %}
     {% endif %}
     {% block content %} 
