@@ -1,17 +1,10 @@
 # PROJETO EVENTEX
 
-Esta pasta refere-se ao código de aula de Vitor Luiz Pestana Pereira Menezes
-do curso 'Welcome to The Django' do professor Henrique Bastos.
-Em suma, este código é para estudos pois é resultado dos estudos do aluno.
+Esta pasta refere-se ao código de aula de Vitor Luiz Pestana Pereira Menezes do curso 'Welcome to The Django' do professor Henrique Bastos. Em suma, este é um código de estudos pois é resultado da investigação acerca da framework "django" realizada pelo aluno com a orientação do mentor e da comunidade "HBnetwork". Desta maneira, faz-se mister notar que esta pasta está em constante construção e é apenas é usada como portfólio temporário, uma vez que o site final ainda está em desenvolvimento.
 
-O intuíto deste README.MD é exemplificar uma maneira prática de criar uma 
-documentação adequada para meus futuros projetos. Além de ser bom, o código
-deve ser facilmente usável por qualquer profissional que vier a trabalhar neste. 
-Desta forma, uma documentação adequada faz-se mister para este fim.
+O intuíto deste "README.MD" é exemplificar como criar uma documentação adequada e prática para meus futuros projetos. Não basta ao código ser funcional. Além de disto, deve ser de fácil manutenção por qualquer profissional que vier a trabalhar neste. Destarte, uma documentação adequada faz-se necessária para este fim.
 
-Vale ressaltar que uma boa documentação não é aquela que explica cada linha do
-código, mas a que com poucos passos entregue ao seu leitor o resultado mais célere
-possível e o faça, desta forma, começar a trabalhar naquele código, projeto.
+Vale ressaltar que uma boa documentação não é aquela que explica cada linha do código, mas a que com poucos passos entregue ao seu leitor o resultado mais célere possível.Fazendo-o, desta forma, começar a trabalhar naquele projeto imediatamente.
 
 # Como desenvolver?
 
