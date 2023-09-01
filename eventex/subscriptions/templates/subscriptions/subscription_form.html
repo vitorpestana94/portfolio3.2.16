@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<form action="." method="post">
+<form action="." method="post" style="color:white;">
     {% csrf_token %}
     <p>
         <label for="{{ form.nome.id_for_label }}">{{ form.nome.label }}</label>
