@@ -1,4 +1,4 @@
-Olá! Muito obrigado {{ subscription.nome }} pelo seu interesse em entrar em contato comigo! Gostaria de informar que, assim que possível, entrarei em contato com você pelo seu email {{ subscription.email }} ou pelo seu telefone {{ subscription.telefone }}.
+Olá! Muito obrigado {{ subscription.nome }} pelo seu interesse em entrar em contato comigo! Gostaria de informar que este é um email automático e que, assim que possível, entrarei em contato com você por este mesmo email fornecido {{ subscription.email }} ou pelo seu telefone {{ subscription.telefone }} via whatsapp ou por ligação.
 
 att,
 Vitor Pestana.
