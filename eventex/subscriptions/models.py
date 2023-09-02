@@ -2,7 +2,6 @@ from django.db import models
 
 class Subscription(models.Model):
     nome = models.CharField('Nome', max_length=100)
-    CPF = models.CharField('Número de CPF', max_length=11)
     email = models.EmailField('E_mail')
     telefone = models.CharField('Telefone', max_length=20)
     created_at = models.DateTimeField('Criado em', auto_now_add=True)
