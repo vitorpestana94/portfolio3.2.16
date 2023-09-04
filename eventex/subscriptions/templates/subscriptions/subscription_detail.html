@@ -1,10 +1,16 @@
-{% block content %}
-<section style="padding: 10px;background-color: black;position: absolute;top: 25%;left: 35%;; align-items: center;text-align: justify; border: 2px; box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77); width: 400px; height: 400px;">
-    <div style="color: white;">
-        <h1> Obrigado pelo contato, {{ subscription.nome }}!</h1>
-        <p> Um email foi enviado para sua caixa ({{ subscription.email }}) informando o sucesso da sua requisição de contato! </p>
-        
-        <p>Em breve retornarei o contato!</p>
-    </div>
-</section>
-{% endblock content %}
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Pestana's Portfolio</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <section style="padding: 10px;background-color: black;position: absolute;top: 25%;left: 35%; align-items: center;text-align: justify; border: 2px; box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77); width: 400px; height: 400px;">
+        <div style="color: white;">
+            <h1> Obrigado pelo contato, {{ subscription.nome }}!</h1>
+            <p> Um email foi enviado para sua caixa ({{ subscription.email }}) informando o sucesso da sua requisição de contato!</p>        
+            <p>Em breve retornarei o contato!</p>
+        </div>
+    </section>    
+  </body>
+</html>
