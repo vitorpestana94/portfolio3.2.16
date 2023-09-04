@@ -4,7 +4,7 @@
 <div style="background-color: black;text-align: center;position: absolute;top: 25%;left: 35%;border: 2px; box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77); width: 400px; height: 400px;">
 <form action="." method="post" style="color:white;">
     {% csrf_token %}
-     <h1>Formulário de inscrição</h1>
+     <h1>Contato:</h1>
     <p style="padding: 10px;">
         <label for="{{ form.nome.id_for_label }}">{{ form.nome.label }}</label>
         {{ form.nome.errors }}
@@ -30,7 +30,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Pestana's Portfolio</title>
     <style>
         .alert {
             padding: 0 15px;
