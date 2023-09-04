@@ -2,20 +2,20 @@
 {% load static %}
 {% block content %}
 <div style="background-color: black;text-align: center;position: absolute;top: 25%;left: 35%;border: 2px; box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77); width: 400px; height: 400px;">
-<form action="." method="post" style="color:white; padding: 30px;">
+<form action="." method="post" style="color:white;">
     {% csrf_token %}
      <h1>Formulário de inscrição</h1>
-    <p>
+    <p style="padding: 10px;">
         <label for="{{ form.nome.id_for_label }}">{{ form.nome.label }}</label>
         {{ form.nome.errors }}
         {{ form.nome}}
     </p>
-    <p>
+    <p style="padding: 10px;">
         <label for="{{ form.email.id_for_label }}">{{ form.email.label }}</label>
         {{ form.email.errors }}
         {{ form.email}}
     </p>
-    <p>
+    <p style="padding: 10px;">
         <label for="{{ form.telefone.id_for_label }}">{{ form.telefone.label }}</label>
         {{ form.telefone.errors }}
         {{ form.telefone}}
